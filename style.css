@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(204, 252, 255) !important;
+}
+
+/* navbar */
+.custom-navbar {
+  background-color: red;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* headings */
+.head-mdm {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* experience */
+.experience {
+}
+
+ul.timeline-3 {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline-3:before {
+  content: " ";
+  background: #d4d9df;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline-3 > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+ul.timeline-3 > li:before {
+  content: " ";
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+/* projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 2rem;
+}
+
+/* gallery */
