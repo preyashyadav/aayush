@@ -21,33 +21,137 @@ html {
   overflow-x: hidden;
 }
 
+/* Define the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Define the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #1f2020, #232526);
+  border-radius: 10px;
+  border: 3px solid #f5f5f5; /* Set a border color for a nice effect */
+}
+
+/* Define the scrollbar track when the handle is being dragged */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #1f2020, #232526);
+}
+
+/* Make the scrollbar track invisible */
+::-webkit-scrollbar-track {
+  background: pink; /* Set the background color of the track to transparent */
+  border-radius: 10px;
+}
+
+/* Define the scrollbar handle when the track is being hovered */
+::-webkit-scrollbar-track:hover::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #1f2020, #232526);
+}
+
+/* Define the scrollbar track */
+scrollbar {
+  width: 12px;
+}
+
+/* Define the scrollbar handle */
+scrollbar-thumb {
+  background: linear-gradient(to right, #1f2020, #232526);
+  border-radius: 10px;
+  border: 3px solid #f5f5f5; /* Set a border color for a nice effect */
+}
+
+/* Define the scrollbar track when the handle is being dragged */
+scrollbar-thumb:hover {
+  background: linear-gradient(to right, #1f2020, #232526);
+}
+
+/* Define the scrollbar track */
+scrollbar-track {
+  background: #f5f5f5; /* Set the background color of the track */
+  border-radius: 10px;
+}
+
+/* Define the scrollbar handle when the track is being hovered */
+scrollbar-track:hover scrollbar-thumb {
+  background: linear-gradient(to right, #1f2020, #232526);
+}
+
 body {
-  background: #000000; /* fallback for old browsers */
+  background: #232526; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to bottom,
-    #434343,
-    #000000
+    to right,
+    #252627,
+    #232526
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
-    #434343,
-    #000000
+    to right,
+    #1f2020,
+    #232526
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* navbar */
 .custom-navbar {
-  background-color: #000;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
+  transition: background-color 0.3s ease; /* Add a smooth transition for the background color */
+}
+
+.navbar-scrolled {
+  background-color: #151515;
+}
+
+.navbar-scrolled-font {
+  color: black !important;
 }
 
 .navbar-brand {
   font-family: "Poppins", sans-serif;
   font-weight: bolder !important;
-  font-size: 2.5rem !important;
+  font-size: 1.5rem !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+a.nav-link {
+  position: relative;
+}
+
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: yellow;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  opacity: 0;
+}
+
+a.nav-link:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.custom-toggler {
+  border: none !important;
+  outline: none !important;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.custom-toggler-icon {
+  font-size: 24px;
+  color: #fff; /* Set the desired color */
+  border: none !important;
 }
 
 /* headings */
@@ -78,7 +182,22 @@ body {
 }
 
 .intro-img img {
-  width: 100%;
+  width: 600px;
+  padding-top: 2rem;
+  margin-left: -2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .intro-img img {
+    width: 300px;
+    padding-top: 2rem;
+    margin-left: -2rem;
+  }
+
+  .intro-head {
+    margin-left: 2rem;
+    margin-top: 2rem;
+  }
 }
 
 .intro-head {
@@ -181,7 +300,7 @@ svg {
   /* border: 2px solid black; */
   border-radius: 0.8rem;
   background-color: rgba(255, 255, 255, 0.625);
-  margin: 6rem 0;
+  margin: 12rem 0;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
     rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
     rgba(240, 46, 170, 0.05) 25px 25px;
@@ -198,7 +317,7 @@ svg {
     padding: 2rem 0.6rem;
     /* border: 2px solid black; */
     border-radius: 0.8rem;
-    margin: 4rem 0;
+    margin: 6rem 0;
   }
 }
 
