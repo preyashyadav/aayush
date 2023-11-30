@@ -358,8 +358,7 @@ svg {
   background-color: rgba(255, 255, 255, 0.625);
   margin: 12rem 0;
   box-shadow: rgba(200, 200, 200, 0.4) 5px 5px,
-    rgba(200, 200, 200, 0.3) 10px 10px, rgba(200, 200, 200, 0.2) 15px 15px,
-    rgba(200, 200, 200, 0.1) 20px 20px, rgba(200, 200, 200, 0.05) 25px 25px;
+    rgba(200, 200, 200, 0.3) 10px 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -651,11 +650,6 @@ ul.timeline-3 > li:before {
 
 /* gallery */
 
-a.dont:hover {
-  text-decoration: none !important;
-  color: white;
-}
-
 /* cards */
 
 .card {
@@ -688,7 +682,7 @@ a.dont:hover {
 /* footer */
 
 .footer {
-  padding: 2.5rem;
+  width: 100vw;
   background-color: #a2a2a2;
 }
 
@@ -706,4 +700,14 @@ a.dont:hover {
 .text {
   text-align: center;
   font-size: 1rem;
+}
+
+a.dont {
+  text-decoration: none;
+  color: white;
+}
+
+.timeline-3 a.dont:hover {
+  text-decoration: none !important;
+  color: white;
 }
