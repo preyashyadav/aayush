@@ -9,7 +9,8 @@ $grey: rgba(34,34,34,0.95);
 $grey-light: #aeaeae; */
 
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -28,20 +29,19 @@ html {
 
 /* Define the scrollbar handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to right, #1f2020, #232526);
-  border-radius: 10px;
-  border: 3px solid #f5f5f5; /* Set a border color for a nice effect */
+  background: whitesmoke;
+  border-radius: 15px;
 }
 
 /* Define the scrollbar track when the handle is being dragged */
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to right, #1f2020, #232526);
+  background: rgb(163, 163, 163);
 }
 
 /* Make the scrollbar track invisible */
 ::-webkit-scrollbar-track {
-  background: pink; /* Set the background color of the track to transparent */
-  border-radius: 10px;
+  background-color: #1e1e1e; /* Set the background color of the track to transparent */
+  border: none; /* Remove any borders */
 }
 
 /* Define the scrollbar handle when the track is being hovered */
@@ -49,46 +49,100 @@ html {
   background: linear-gradient(to right, #1f2020, #232526);
 }
 
-/* Define the scrollbar track */
-scrollbar {
-  width: 12px;
+/* Loader */
+
+/* Loader */
+.loader-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px); /* Adjust the blur amount */
+  z-index: 998; /* Ensure overlay is behind the loader */
+  display: grid;
+  place-items: center;
+  transition: backdrop-filter 0.5s; /* Add a transition for a smoother effect */
 }
 
-/* Define the scrollbar handle */
-scrollbar-thumb {
-  background: linear-gradient(to right, #1f2020, #232526);
-  border-radius: 10px;
-  border: 3px solid #f5f5f5; /* Set a border color for a nice effect */
+.loader {
+  width: 50px;
+  aspect-ratio: 1.154;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: conic-gradient(
+    from 120deg at 50% 64%,
+    #0000,
+    #25b09b 1deg 120deg,
+    #0000 121deg
+  );
+  animation: l27-0 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+  z-index: 999; /* Ensure loader is on top of other content */
 }
 
-/* Define the scrollbar track when the handle is being dragged */
-scrollbar-thumb:hover {
-  background: linear-gradient(to right, #1f2020, #232526);
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  transform-origin: 50% 66%;
+  animation: l27-1 1.5s infinite;
 }
 
-/* Define the scrollbar track */
-scrollbar-track {
-  background: #f5f5f5; /* Set the background color of the track */
-  border-radius: 10px;
+.loader:after {
+  --s: -1;
 }
 
-/* Define the scrollbar handle when the track is being hovered */
-scrollbar-track:hover scrollbar-thumb {
-  background: linear-gradient(to right, #1f2020, #232526);
+@keyframes l27-0 {
+  0%,
+  30% {
+    transform: rotate(0);
+  }
+  70% {
+    transform: rotate(120deg);
+  }
+  70.01%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes l27-1 {
+  0% {
+    transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+  }
+  30%,
+  70% {
+    transform: rotate(calc(var(--s, 1) * 120deg))
+      translate(calc(var(--s, 1) * -5px), 10px);
+  }
+  100% {
+    transform: rotate(calc(var(--s, 1) * 120deg)) translate(0);
+  }
+}
+
+.no-backdrop-filter {
+  backdrop-filter: none;
 }
 
 body {
-  background: #232526; /* fallback for old browsers */
+  background: #1c1c1c; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #252627,
-    #232526
+    #1e1e1e,
+    #1c1c1c
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #1f2020,
-    #232526
+    #1c1c1c,
+    #1e1e1e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Poppins", sans-serif !important;
+  /* font-family: "Roboto", sans-serif !important; */
 }
 
 /* navbar */
@@ -154,15 +208,17 @@ a.nav-link:hover::after {
   border: none !important;
 }
 
-/* headings */
 .head-mdm {
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  font-weight: bolder;
+  font-size: 2.5rem;
   padding-top: 0.5rem;
   padding-bottom: 1.5rem;
   text-align: center;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
+  text-decoration: unset;
+  text-shadow: 2px 2px 4px #dda500; /* Adjust values accordingly */
 }
 
 /* home screen */
@@ -301,9 +357,9 @@ svg {
   border-radius: 0.8rem;
   background-color: rgba(255, 255, 255, 0.625);
   margin: 12rem 0;
-  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-    rgba(240, 46, 170, 0.05) 25px 25px;
+  box-shadow: rgba(200, 200, 200, 0.4) 5px 5px,
+    rgba(200, 200, 200, 0.3) 10px 10px, rgba(200, 200, 200, 0.2) 15px 15px,
+    rgba(200, 200, 200, 0.1) 20px 20px, rgba(200, 200, 200, 0.05) 25px 25px;
 }
 
 @media screen and (max-width: 500px) {
@@ -595,47 +651,59 @@ ul.timeline-3 > li:before {
 
 /* gallery */
 
-/* footer */
-
-footer {
-  padding: 20px 0; /* Add some padding to the footer */
+a.dont:hover {
+  text-decoration: none !important;
+  color: white;
 }
 
-/* Style for the left column (Links Section) */
-/* .col-md-6 ul {
-  list-style: none;
-  padding: 0;
-} */
+/* cards */
 
-/* .col-md-6 ul li {
-  margin-bottom: 10px;
-} */
+.card {
+  border-radius: 1rem !important;
+}
 
-.col-md-6 a {
-  color: #ffffff; /* Set link color to white */
+.card-img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  padding-bottom: 3rem !important;
+  background-color: #c4c4c4;
+  text-align: justify;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card a:hover {
   text-decoration: none;
 }
 
-.col-md-6 a:hover {
-  text-decoration: underline; /* Add underline on hover */
+/* footer */
+
+.footer {
+  padding: 2.5rem;
+  background-color: #a2a2a2;
 }
 
-/* Style for the right column (Contact Form Section) */
-.col-md-6 form {
-  max-width: 400px; /* Set a maximum width for the form */
+.links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  padding-top: 1rem;
 }
 
-.col-md-6 input,
-.col-md-6 textarea {
-  margin-bottom: 10px;
-}
-
-/* Style for the submit button */
-.btn-primary {
-  background-color: #007bff;
-  color: #ffffff;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
+.text {
+  text-align: center;
+  font-size: 1rem;
 }
