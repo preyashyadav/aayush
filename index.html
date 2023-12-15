@@ -549,6 +549,56 @@
         </div>
       </div>
 
+      <!-- Blogs -->
+      <div id="blogs">
+        <div class="container">
+          <div class="blogs">
+            <div class="head-mdm">My Blogs</div>
+            <div class="blog-card">
+              <div class="meta">
+                <div
+                  class="photo"
+                  style="
+                    background-image: url(./images/image-kernels/12.png);
+                  "
+                ></div>
+              </div>
+              <div class="description">
+                <h1>Image Kernels in Computational Vision:</h1>
+                <h2>A Mathematical Study and OpenCV implementation</h2>
+                <p>
+                  Scroll through any social media feed today, and you'll see a parade of photos, each touched up with what we casually term "filters." I've always been fascinated by the mechanics behind these visual tweaks. The day I understood the math and theory of filters was the day my whole perspective changed. In simple terms, these filters are just kernels. An image? Think of it as a grid, each cell filled with numbers that represent shades of colors (true for gray scale images). A color image has 3 channels (Red, Green and Blue) and hence to keep things simple, I will be using gray scaled images. And the process of applying on a filter? It's all about altering these numbers in systematic ways. Trust me, it’s not as complicated as it sounds! In this blog, we're diving into the basics – exploring four fundamental kernel types: identity, blur, sharpen, and emboss. Let’s dive in!
+                </p>
+                <p class="read-more">
+                  <a href="./blogs/image-kernels.html">Read More</a>
+                </p>
+              </div>
+            </div>
+            <div class="blog-card alt">
+              <div class="meta">
+                <div
+                  class="photo"
+                  style="
+                    background-image: url(./images/convolution/10.png);
+                  "
+                ></div>
+              </div>
+              <div class="description">
+                <h1>Convolutional Neural Networks</h1>
+                <h2>Explained Layer by Layer with CIFAR-10 Case Studies</h2>
+                <p>
+                  If you've ever wondered how computers manage to recognize faces or objects in photos, the answer lies in a remarkable process powered by something called Convolutional Neural Networks, or CNNs for short. These are incredibly smart algorithms that work somewhat like our own vision, sifting through images pixel by pixel, learning to spot patterns and nuances that escape the untrained eye. Whether it's distinguishing a cat from a dog in a snapshot or picking out a stop sign from a street scene, CNNs are being used behind the scenes. They're not just about power but also about the intricate efficiency in handling vast amounts of visual data, all while discerning details we might miss at a glance. So, let's dive into the world of CNNs.
+                </p>
+                <p class="read-more">
+                  <a href="/blogs/convolutional-neural-networks.html">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
       <!-- Projects -->
       <div id="project">
         <div class="container">
@@ -559,40 +609,38 @@
                 <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
-                    src="./images/projects/malaria.webp"
+                    src="./images/projects/segmentations.webp"
                     class="card-img-top"
                     alt="..."
                   />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Detecting Malaria Cells using CNN</h5>
+                    <h5 class="card-title">Segmentation of Customers using Clustering</h5>
                     <p class="card-text">
-                      Using supervised learning (VGG, Inception, ResNet & Inception ResNet) the model was trained to classify parasitized and uninfected cells. An accuracy of 91% on the test set was achieved.
+                      The data contains details about regular customers in a mall and based on their spending, the customers are assigned a Spending Score. The aim was to segment the customers so that targeted marketing can be implemented on the customers. For instance, different categories of customers can be provided with category-specific offers, thus leading to increased revenue and profits for the mall stores. The objective was achieved successfully.
                     </p>
-                    <a href="https://www.kaggle.com/aayush7kumar/cnn-with-vgg-inception-resnet-inception-resnet" class="btn btn-warning">View More</a>
+                    <a href="https://www.kaggle.com/aayush7kumar/clustering-using-k-means-hierarchical-and-dbscan" class="btn btn-warning">View More</a>
                   </div>
                 </div>
               </div>
-
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
-                    src="./images/projects/generating fake characters.webp"
+                    src="./images/projects/web_scraping.webp"
                     class="card-img-top"
                     alt="..."
                   />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Generating Fake Character Faces using DCGANs</h5>
+                    <h5 class="card-title">Web Scraping ‘Bureau of Safety and Environmental Enforcement’ website using Beautiful Soup</h5>
                     <p class="card-text">
-                      The dataset consists of cropped images of characters from The Simpsons show. There are 9877 images of 200×200×3 size. The aim was to generate similar-looking images which resemble the characters from the show. For this, GANs were used and the objective was achieved.
+                      The Python script automates the retrieval and processing of oil and gas data from the Bureau of Safety and Environmental Enforcement's website for the Gulf of Mexico region. It checks for the latest file updates, selectively downloads specified files for the years 2019 and 2020, and ensures it only fetches files with modifications. After downloading, the script cleans and combines the data into a single CSV file, creating a temporary dataframe for each comma-separated file from all years. This dataframe is then concatenated, resulting in a comprehensive dataset for 2019 and 2020, which is ultimately converted into a CSV file. The script provides an efficient and automated solution for managing and updating the oil and gas dataset from the Gulf of Mexico region.
                     </p>
-                    <a href="https://www.kaggle.com/code/aayush7kumar/deep-convolutional-gans-simplified" class="btn btn-warning">View More</a>
+                    <a href="https://github.com/Aayush7Kumar/web_scraping" class="btn btn-warning">View More</a>
                   </div>
                 </div>
               </div>
-
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
@@ -617,17 +665,35 @@ Predicting COVID Wave 3 in India using LSTM</h5>
                 <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
-                    src="./images/projects/segmentations.webp"
+                    src="./images/projects/malaria.webp"
                     class="card-img-top"
                     alt="..."
                   />
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Segmentation of Customers using Clustering</h5>
+                    <h5 class="card-title">Detecting Malaria Cells using CNN</h5>
                     <p class="card-text">
-                      The data contains details about regular customers in a mall and based on their spending, the customers are assigned a Spending Score. The aim was to segment the customers so that targeted marketing can be implemented on the customers. For instance, different categories of customers can be provided with category-specific offers, thus leading to increased revenue and profits for the mall stores. The objective was achieved successfully.
+                      Using supervised learning (VGG, Inception, ResNet & Inception ResNet) the model was trained to classify parasitized and uninfected cells. An accuracy of 91% on the test set was achieved.
                     </p>
-                    <a href="https://www.kaggle.com/aayush7kumar/clustering-using-k-means-hierarchical-and-dbscan" class="btn btn-warning">View More</a>
+                    <a href="https://www.kaggle.com/aayush7kumar/cnn-with-vgg-inception-resnet-inception-resnet" class="btn btn-warning">View More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card" style="width: 15rem">
+                  <div class="card-img-cont">
+                    <img
+                    src="./images/projects/generating fake characters.webp"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Generating Fake Character Faces using DCGANs</h5>
+                    <p class="card-text">
+                      The dataset consists of cropped images of characters from The Simpsons show. There are 9877 images of 200×200×3 size. The aim was to generate similar-looking images which resemble the characters from the show. For this, GANs were used and the objective was achieved.
+                    </p>
+                    <a href="https://www.kaggle.com/code/aayush7kumar/deep-convolutional-gans-simplified" class="btn btn-warning">View More</a>
                   </div>
                 </div>
               </div>
@@ -666,25 +732,6 @@ Predicting COVID Wave 3 in India using LSTM</h5>
                       A Tableau visualization of COVID vaccination data around the globe and comparing populations of countries with more than 75% population fully vaccinated.
                     </p>
                     <a href="https://public.tableau.com/app/profile/aayush.kumar1384/viz/COVIDVaccinationsNationWise/COVIDVaccinationsNationWise" class="btn btn-warning">View More</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 15rem">
-                  <div class="card-img-cont">
-                    <img
-                    src="./images/projects/web_scraping.webp"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Web Scraping ‘Bureau of Safety and Environmental Enforcement’ website using Beautiful Soup</h5>
-                    <p class="card-text">
-                      The Python script automates the retrieval and processing of oil and gas data from the Bureau of Safety and Environmental Enforcement's website for the Gulf of Mexico region. It checks for the latest file updates, selectively downloads specified files for the years 2019 and 2020, and ensures it only fetches files with modifications. After downloading, the script cleans and combines the data into a single CSV file, creating a temporary dataframe for each comma-separated file from all years. This dataframe is then concatenated, resulting in a comprehensive dataset for 2019 and 2020, which is ultimately converted into a CSV file. The script provides an efficient and automated solution for managing and updating the oil and gas dataset from the Gulf of Mexico region.
-                    </p>
-                    <a href="https://github.com/Aayush7Kumar/web_scraping" class="btn btn-warning">View More</a>
                   </div>
                 </div>
               </div>
@@ -744,56 +791,43 @@ Predicting COVID Wave 3 in India using LSTM</h5>
           </div>
         </div>
       </div>
-      <!-- Blogs -->
 
-      <div id="blogs">
-        <div class="container">
-          <div class="blogs">
-            <div class="head-mdm">My Blogs</div>
-            <div class="blog-card">
-              <div class="meta">
-                <div
-                  class="photo"
-                  style="
-                    background-image: url(./images/image-kernels/12.png);
-                  "
-                ></div>
+      <!-- Achievements -->
+
+      <!-- Gallery -->
+      <div class="container" id="technocrats-robotics">
+        <div class="gallery">
+          <div class="row">
+            <div class="head-mdm">Technocrats Robotics</div>
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/tcr/me1.webp" alt="Image 1" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                  <img src="./images/tcr/me2.webp" alt="Image 2" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                  <img src="./images/tcr/me3.webp" alt="Image 3" class="gallery-img">
+                </div>
               </div>
-              <div class="description">
-                <h1>Image Kernels in Computational Vision:</h1>
-                <h2>A Mathematical Study and OpenCV implementation</h2>
-                <p>
-                  Scroll through any social media feed today, and you'll see a parade of photos, each touched up with what we casually term "filters." I've always been fascinated by the mechanics behind these visual tweaks. The day I understood the math and theory of filters was the day my whole perspective changed. In simple terms, these filters are just kernels. An image? Think of it as a grid, each cell filled with numbers that represent shades of colors (true for gray scale images). A color image has 3 channels (Red, Green and Blue) and hence to keep things simple, I will be using gray scaled images. And the process of applying on a filter? It's all about altering these numbers in systematic ways. Trust me, it’s not as complicated as it sounds! In this blog, we're diving into the basics – exploring four fundamental kernel types: identity, blur, sharpen, and emboss. Let’s dive in!
-                </p>
-                <p class="read-more">
-                  <a href="./blogs/image-kernels.html">Read More</a>
-                </p>
-              </div>
-            </div>
-            <div class="blog-card alt">
-              <div class="meta">
-                <div
-                  class="photo"
-                  style="
-                    background-image: url(./images/convolution/10.png);
-                  "
-                ></div>
-              </div>
-              <div class="description">
-                <h1>Convolutional Neural Networks</h1>
-                <h2>Explained Layer by Layer with CIFAR-10 Case Studies</h2>
-                <p>
-                  If you've ever wondered how computers manage to recognize faces or objects in photos, the answer lies in a remarkable process powered by something called Convolutional Neural Networks, or CNNs for short. These are incredibly smart algorithms that work somewhat like our own vision, sifting through images pixel by pixel, learning to spot patterns and nuances that escape the untrained eye. Whether it's distinguishing a cat from a dog in a snapshot or picking out a stop sign from a street scene, CNNs are being used behind the scenes. They're not just about power but also about the intricate efficiency in handling vast amounts of visual data, all while discerning details we might miss at a glance. So, let's dive into the world of CNNs.
-                </p>
-                <p class="read-more">
-                  <a href="/blogs/convolutional-neural-networks.html">Read More</a>
-                </p>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="./images/tcr/me4.webp" alt="Image 4" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                  <img src="./images/tcr/me5.webp" alt="Image 5" class="gallery-img">
+                </div>
+                <div class="col-md-4">
+                  <img src="./images/tcr/me6.webp" alt="Image 6" class="gallery-img">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Achievements -->
+
       <!-- Gallery -->
       <div class="container" id="gallery">
         <div class="gallery">
@@ -917,5 +951,11 @@ window.addEventListener('load', function() {
         window.addEventListener("scroll", toggleNavbarBackground);
       });
     </script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   </body>
 </html>

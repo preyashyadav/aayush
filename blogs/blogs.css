@@ -4,9 +4,23 @@
   right: 20px;
 }
 
+.blog-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+  padding: 1rem;
+}
+
 .blog-container {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  width: 800px;
+  /* border: 2px solid black; */
+}
+
+@media screen and (max-width: 768px) {
+  .blog-container {
+    width: 350px !important;
+  }
 }
 
 .blog-content {
@@ -27,8 +41,18 @@
   object-fit: cover;
 }
 
+.blog-image video {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
   .blog-image img {
+    width: 300px !important;
+  }
+
+  .blog-image video {
     width: 300px !important;
   }
 }

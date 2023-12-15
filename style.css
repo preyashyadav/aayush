@@ -597,9 +597,7 @@ ul.timeline-3 > li:before {
 }
 
 .card img {
-  width: 300px !important;
-  height: 300px !important;
-  padding: 1rem;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 500px) {
@@ -673,6 +671,7 @@ ul.timeline-3 > li:before {
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .card a:hover {
@@ -711,3 +710,10 @@ a.dont {
   text-decoration: none !important;
   color: white;
 }
+
+
+.gallery-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
