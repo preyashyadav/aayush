@@ -673,10 +673,10 @@ ul.timeline-3 > li:before {
 
 /* gallery */
 
-.gallery-1 img {
+/* .gallery-1 img {
   width: 100%;
   height: 450px;
-}
+} */
 
 @media screen and (max-width: 780px) {
   .gallery-1 img {
@@ -759,4 +759,3 @@ a.dont {
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
 }
-
