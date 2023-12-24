@@ -153,63 +153,66 @@ To implement this, here is the code:
 
               </div>
               <div class="blog-code">
-                <pre>
-                  <code>
-                    import tensorflow as tf
-                    from tensorflow.keras import datasets, layers, models
-                    import matplotlib.pyplot as plt
+                <code>
 
-                    # Load and preprocess the CIFAR-10 dataset
-                    (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
-                    train_images, test_images = train_images / 255.0, test_images / 255.0
-
-                    # Define the LeNet-like model architecture
-                    model = models.Sequential([
-                        # C1 Convolutional Layer
-                        layers.Conv2D(filters=6, kernel_size=(5, 5), activation='relu', input_shape=(32, 32, 3)),
-                        # S2 Pooling Layer
-                        layers.MaxPooling2D(pool_size=(2, 2)),
-                        # C3 Convolutional Layer
-                        layers.Conv2D(filters=16, kernel_size=(5, 5), activation='relu'),
-                        # S4 Pooling Layer
-                        layers.MaxPooling2D(pool_size=(2, 2)),
-                        # Flatten the network
-                        layers.Flatten(),
-                        # C5 Fully connected layer
-                        layers.Dense(units=120, activation='relu'),
-                        # F6 Fully connected layer
-                        layers.Dense(units=84, activation='relu'),
-                        # Output layer with softmax activation
-                        layers.Dense(units=10, activation='softmax')
-                    ])
-
-                    # Compile the model
-                    model.compile(optimizer='adam',
-                                  loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
-                                  metrics=['accuracy'])
-
-                    # Print model summary
-                    model.summary()
-
-                    # Train the model
-                    history = model.fit(train_images, train_labels, epochs=10, 
-                                        validation_data=(test_images, test_labels))
-
-                    # Evaluate the model
-                    test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
-                    print(f'Test accuracy: {test_acc}')
-
-                    # Plot training history
-                    plt.plot(history.history['accuracy'], label='accuracy')
-                    plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
-                    plt.xlabel('Epoch')
-                    plt.ylabel('Accuracy')
-                    plt.ylim([0, 1])
-                    plt.legend(loc='lower right')
-
-                    plt.show()
-                  </code>
-                </pre>
+                  <pre>
+                    <code>
+                      import tensorflow as tf
+                      from tensorflow.keras import datasets, layers, models
+                      import matplotlib.pyplot as plt
+  
+                      # Load and preprocess the CIFAR-10 dataset
+                      (train_images, train_labels), (test_images, test_labels) = datasets.cifar10.load_data()
+                      train_images, test_images = train_images / 255.0, test_images / 255.0
+  
+                      # Define the LeNet-like model architecture
+                      model = models.Sequential([
+                          # C1 Convolutional Layer
+                          layers.Conv2D(filters=6, kernel_size=(5, 5), activation='relu', input_shape=(32, 32, 3)),
+                          # S2 Pooling Layer
+                          layers.MaxPooling2D(pool_size=(2, 2)),
+                          # C3 Convolutional Layer
+                          layers.Conv2D(filters=16, kernel_size=(5, 5), activation='relu'),
+                          # S4 Pooling Layer
+                          layers.MaxPooling2D(pool_size=(2, 2)),
+                          # Flatten the network
+                          layers.Flatten(),
+                          # C5 Fully connected layer
+                          layers.Dense(units=120, activation='relu'),
+                          # F6 Fully connected layer
+                          layers.Dense(units=84, activation='relu'),
+                          # Output layer with softmax activation
+                          layers.Dense(units=10, activation='softmax')
+                      ])
+  
+                      # Compile the model
+                      model.compile(optimizer='adam',
+                                    loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+                                    metrics=['accuracy'])
+  
+                      # Print model summary
+                      model.summary()
+  
+                      # Train the model
+                      history = model.fit(train_images, train_labels, epochs=10, 
+                                          validation_data=(test_images, test_labels))
+  
+                      # Evaluate the model
+                      test_loss, test_acc = model.evaluate(test_images, test_labels, verbose=2)
+                      print(f'Test accuracy: {test_acc}')
+  
+                      # Plot training history
+                      plt.plot(history.history['accuracy'], label='accuracy')
+                      plt.plot(history.history['val_accuracy'], label = 'val_accuracy')
+                      plt.xlabel('Epoch')
+                      plt.ylabel('Accuracy')
+                      plt.ylim([0, 1])
+                      plt.legend(loc='lower right')
+  
+                      plt.show()
+                    </code>
+                  </pre>
+                </code>
               </div>
 
               <div class="blog-image">
@@ -246,8 +249,9 @@ To implement this, here is the code:
                 </ol>
               </div>
               <div class="blog-code">
+                
+                <code>
                 <pre>
-                  <code>
                     import tensorflow as tf
                     from tensorflow.keras import datasets, layers, models
                     import matplotlib.pyplot as plt
@@ -317,9 +321,8 @@ To implement this, here is the code:
                     plt.legend(loc='lower right')
 
                     plt.show()
-
+                  </pre>
                   </code>
-                </pre>
               </div>
               <div class="blog-image">
                     <img src="../images/convolution/14.png">
@@ -368,7 +371,8 @@ To implement this, here is the code:
               </div>
 
               <div class="blog-code">
-                <pre>
+                <code>
+                   <pre>
                   <code>
                     import tensorflow as tf
                     from tensorflow.keras import datasets, layers, models, callbacks
@@ -447,6 +451,8 @@ To implement this, here is the code:
 
                   </code>
                 </pre>
+                </code>
+               
               </div>
               <div class="blog-image">
                     <img src="../images/convolution/17.png">
