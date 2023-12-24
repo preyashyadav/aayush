@@ -17,6 +17,9 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/61b8e6a316.js" crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <!-- <div class="loader-container">
   <div class="loader"></div> -->
@@ -53,32 +56,11 @@
           <ul class="navbar-nav ms-auto" id="navbar-scrolled-font">
             <li class="nav-item ">
               <a class="nav-link" aria-current="page" href="#about"
-                >About</a
+                ><i class="fa-solid fa-address-card"></i> About</a
               >
             </li>
-            <li>
-              <a class="nav-link" href="#experience">Resume</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link active" href="#experience">Experience</a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#achievements">Achievements</a> -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#gallery">My Clicks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link active" href="#publications"><i class="fa-solid fa-newspaper"></i> Publications</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -88,7 +70,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
-              >
+              ><i class="fa-solid fa-feather"></i>
                 My Blogs
               </a>
               <ul
@@ -98,6 +80,19 @@
                 <li><a class="dropdown-item" href="./blogs/image-kernels.html">Image Kernels</a></li>
                 <li><a class="dropdown-item" href="./blogs/convolutional-neural-networks.html">Convolutional Neural Networks</a></li>
               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#technocrats-robotics"><i class="fa-solid fa-robot"></i> Technocrats</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery"> <i class="fa-solid fa-camera"></i> Clicks</a>
+            </li>
+            
+            <li>
+              <a class="nav-link" href="https://drive.google.com/file/d/1YJItrIN03CyWHV9M1XjrC-wY40X-5flp/view?usp=drive_link" target="_blank"><i class="fa-solid fa-file"></i> Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
             </li>
           </ul>
         </div>
@@ -365,7 +360,7 @@
       <div id="about">
         <div class="container">
           <div class="about">
-            <div class="head-mdm">About Me</div>
+            <div class="head-mdm">About Me <i class="fa-solid fa-face-smile"></i></div>
             <div class="about-container">
               <div class="row">
                 <div class="col-lg-12">
@@ -387,13 +382,13 @@
       <div id="experience">
         <div class="container">
           <div class="experience">
-            <div class="head-mdm">Work Experience</div>
-            <div class="blog-card">
+            <div class="head-mdm">Work Experience <i class="fa-solid fa-laptop-code"></i></div>
+            <div class="blog-card" data-aos="fade-right">
               <div class="meta">
                 <div
-                  class="photo"
+                  class="photo photo-1  photo-2"
                   style="
-                    background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg);
+                    background-image: url(./images/experience/GS-icon-black\ \(1\).webp);
                   "
                 ></div>
               </div>
@@ -413,12 +408,12 @@
                 </p>
               </div>
             </div>
-            <div class="blog-card alt">
+            <div class="blog-card alt" data-aos="fade-left">
               <div class="meta">
                 <div
-                  class="photo"
+                  class="photo photo-1"
                   style="
-                    background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg);
+                    background-image: url(./images/experience/Enverus.webp);
                   "
                 ></div>
               </div>
@@ -441,12 +436,12 @@
                 </p>
               </div>
             </div>
-            <div class="blog-card">
+            <div class="blog-card" data-aos="fade-right">
               <div class="meta">
                 <div
-                  class="photo"
+                  class="photo photo-1"
                   style="
-                    background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg);
+                    background-image: url(./images/experience/Edvicer\ logo.webp);
                   "
                 ></div>
               </div>
@@ -463,12 +458,12 @@
                 </p>
               </div>
             </div>
-            <div class="blog-card alt">
+            <div class="blog-card alt" data-aos="fade-left">
               <div class="meta">
                 <div
-                  class="photo"
+                  class="photo photo-1"
                   style="
-                    background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg);
+                    background-image: url(./images/experience/SCL\ Logo.webp);
                   "
                 ></div>
               </div>
@@ -492,7 +487,7 @@
         <div class="container my-5">
           <div class="education">
             <div class="row">
-              <div class="head-mdm">Education</div>
+              <div class="head-mdm">Education <i class="fa-solid fa-graduation-cap"></i></div>
               <div class="col-md-6 offset-md-3">
                 <ul class="timeline-3">
                   <li>
@@ -520,15 +515,74 @@
         </div>
       </div>
 
+       <!-- Publications -->
+
+      <div id="publications">
+        <div class="container">
+          <div class="blogs">
+            <div class="head-mdm">My Publications <i class="fa-solid fa-newspaper"></i></div>
+            <div class="blog-card" data-aos="fade-right">
+              <div class="meta">
+                <div
+                  class="photo-b"
+                  style="
+                    background-image: url(./images/publications/paper1.webp);
+                  "
+                ></div>
+              </div>
+              <div class="description">
+                <h1>Solar-powered semi-autonomous vehicle for agricultural usage</h1>
+                <!-- <h2>A Mathematical Study and OpenCV implementation</h2> -->
+                <p>
+                  The Farm Assistant Robotic Mobile robot, abbreviated as F.A.R.M, is a four-wheel-drive, solar-powered semi-autonomous vehicle designed specifically to suit the needs of a typical Indian farm. Indian agriculture is composed of many crops, rice, and wheat being the most popularly consumed. F.A.R.M has been designed to keep commercial rice and wheat plantations as the primary focal point but can be extended to other farms with minor tweaks. The 20-kg robot can drive with a continuous transnational speed of 8 m/s on moderately rough terrain. The on-board solar panel generates about 150-W of average power when directly under the sun i.e., a 90-degree angle of elevation. The power-control system uses an MPPT based charging system to recharge the batteries and supply loads. The robot has two modes of control; first using a handheld controller, and second using control buttons through a web page. Various features include a pesticide sprayer, live video surveillance, internal system reporting, invasive animal detection using computer vision, and a self-sustained solar energy-based power system.
+                </p>
+                <p class="read-more">
+                  <a href="https://www.ijariit.com/manuscript/solar-powered-semi-autonomous-vehicle-for-agricultural-usage/">Read More</a>
+                </p>
+              </div>
+            </div>
+            <div class="blog-card alt" data-aos="fade-left">
+              <div class="meta">
+                <div
+                  class="photo-b"
+                  style="
+                    background-image: url(./images/publications/paper2.webp);
+                  "
+                ></div>
+              </div>
+              <div class="description">
+                <h1>Design of Smart Shoe for the Visually Impaired</h1>
+                <!-- <h2>Explained Layer by Layer with CIFAR-10 Case Studies</h2> -->
+                <p>
+                  The objective of this project is to make a smart shoe to provide directional information to the
+visually impaired to help them find their way independently while moving around in public and personal
+spaces. We make use of ultrasonic sensors, vibration motors, microcontrollers (Arduino Uno and Arduino
+Nano), rain sensor, piezoelectric discs for charging, Bluetooth module, and buzzers. The role of the
+ultrasonic sensors is to detect any obstacle within a specified distance between the obstacle and the person
+and read that distance. The microcontrollers and the Bluetooth module are used to acquire and transmit
+data, and the former also sends a signal to the vibration motor when required. The vibration of the motor
+informs the person of the safest direction to move in. The rain sensor alerts the person of puddles on the
+ground by sending a signal to the microcontroller, which in turn activates the buzzer. Thus, this project is
+well equipped with necessary components to aid the independent movement of visually impaired persons
+                </p>
+                <p class="read-more">
+                  <a href="https://ijarsct.co.in/Paper184.pdf">Read More</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Blogs -->
       <div id="blogs">
         <div class="container">
           <div class="blogs">
-            <div class="head-mdm">My Blogs</div>
-            <div class="blog-card">
+            <div class="head-mdm">My Blogs <i class="fa-solid fa-file-pen"></i></div>
+            <div class="blog-card" data-aos="fade-right">
               <div class="meta">
                 <div
-                  class="photo"
+                  class="photo-b"
                   style="
                     background-image: url(./images/image-kernels/12.png);
                   "
@@ -545,10 +599,10 @@
                 </p>
               </div>
             </div>
-            <div class="blog-card alt">
+            <div class="blog-card alt" data-aos="fade-left">
               <div class="meta">
                 <div
-                  class="photo"
+                  class="photo-b"
                   style="
                     background-image: url(./images/convolution/10.png);
                   "
@@ -569,15 +623,15 @@
         </div>
       </div>
 
-
       <!-- Projects -->
       <div id="project">
         <div class="container">
           <div class="project">
             <div class="row">
-              <div class="head-mdm">Projects</div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 15rem">
+              <div class="head-mdm">Projects <i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+                <a href="https://www.kaggle.com/aayush7kumar/clustering-using-k-means-hierarchical-and-dbscan" style="text-decoration: none; color:#373737">
+                  <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
                     src="./images/projects/segmentations.webp"
@@ -587,14 +641,12 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Segmentation of Customers using Clustering</h5>
-                    <p class="card-text">
-                      The data contains details about regular customers in a mall and based on their spending, the customers are assigned a Spending Score. The aim was to segment the customers so that targeted marketing can be implemented on the customers. For instance, different categories of customers can be provided with category-specific offers, thus leading to increased revenue and profits for the mall stores. The objective was achieved successfully.
-                    </p>
-                    <a href="https://www.kaggle.com/aayush7kumar/clustering-using-k-means-hierarchical-and-dbscan" class="btn btn-warning">View More</a>
                   </div>
                 </div>
+                </a>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="col-lg-4 col-md-6 col-sm-12"  data-aos="fade-up">
+                <a href="https://github.com/Aayush7Kumar/web_scraping" style="text-decoration: none; color:#373737">     
                 <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
@@ -605,15 +657,14 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Web Scraping ‘Bureau of Safety and Environmental Enforcement’ website using Beautiful Soup</h5>
-                    <p class="card-text">
-                      The Python script automates the retrieval and processing of oil and gas data from the Bureau of Safety and Environmental Enforcement's website for the Gulf of Mexico region. It checks for the latest file updates, selectively downloads specified files for the years 2019 and 2020, and ensures it only fetches files with modifications. After downloading, the script cleans and combines the data into a single CSV file, creating a temporary dataframe for each comma-separated file from all years. This dataframe is then concatenated, resulting in a comprehensive dataset for 2019 and 2020, which is ultimately converted into a CSV file. The script provides an efficient and automated solution for managing and updating the oil and gas dataset from the Gulf of Mexico region.
-                    </p>
-                    <a href="https://github.com/Aayush7Kumar/web_scraping" class="btn btn-warning">View More</a>
-                  </div>
+                    </div>
                 </div>
+                </a>
+    
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 15rem">
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+                <a href="https://www.kaggle.com/aayush7kumar/predicting-covid-wave-3-in-india-using-lstm" style="text-decoration: none; color:#373737">
+                  <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
                     src="./images/projects/covid lstm.webp"
@@ -624,16 +675,14 @@
                   <div class="card-body">
                     <h5 class="card-title">
 Predicting COVID Wave 3 in India using LSTM</h5>
-                    <p class="card-text">
-                     Daily cases started increasing suddenly just before the new year 2021 and there was a fear for the upcoming wave. LSTM architecture was used to create a model that predicted the peak for the 3rd wave in India with an accuracy of over 94% (for the peak cases). The predicted date of the peak cases and the actual date of peak cases coincided (21st January 2022).
-                    </p>
-                    <a href="https://www.kaggle.com/aayush7kumar/predicting-covid-wave-3-in-india-using-lstm" class="btn btn-warning">View More</a>
-                  </div>
+                    </div>
                 </div>
+                </a>
               </div>
 
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 15rem">
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+                 <a href="https://www.kaggle.com/aayush7kumar/cnn-with-vgg-inception-resnet-inception-resnet" style="text-decoration: none; color:#373737">
+                  <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
                     src="./images/projects/malaria.webp"
@@ -643,15 +692,13 @@ Predicting COVID Wave 3 in India using LSTM</h5>
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Detecting Malaria Cells using CNN</h5>
-                    <p class="card-text">
-                      Using supervised learning (VGG, Inception, ResNet & Inception ResNet) the model was trained to classify parasitized and uninfected cells. An accuracy of 91% on the test set was achieved.
-                    </p>
-                    <a href="https://www.kaggle.com/aayush7kumar/cnn-with-vgg-inception-resnet-inception-resnet" class="btn btn-warning">View More</a>
-                  </div>
+                   </div>
                 </div>
+                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 15rem">
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+                <a href="https://www.kaggle.com/code/aayush7kumar/deep-convolutional-gans-simplified"  style="text-decoration: none; color:#373737">
+                  <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
                     src="./images/projects/generating fake characters.webp"
@@ -661,35 +708,14 @@ Predicting COVID Wave 3 in India using LSTM</h5>
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Generating Fake Character Faces using DCGANs</h5>
-                    <p class="card-text">
-                      The dataset consists of cropped images of characters from The Simpsons show. There are 9877 images of 200×200×3 size. The aim was to generate similar-looking images which resemble the characters from the show. For this, GANs were used and the objective was achieved.
-                    </p>
-                    <a href="https://www.kaggle.com/code/aayush7kumar/deep-convolutional-gans-simplified" class="btn btn-warning">View More</a>
-                  </div>
+                    </div>
                 </div>
+                </a>
               </div>
 
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 15rem">
-                  <div class="card-img-cont">
-                    <img
-                    src="./images/projects/solar powered.webp"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">Solar Powered Farm Assistant Robot</h5>
-                    <p class="card-text">
-                      Autonomous Farming Assistant Bot will improve the quality of life for farmworkers by reducing heavy labor and tedious tasks. This bot will not only ameliorate the methods of farming of the Indian farmers but will also provide a solution to our current energy deficiency problems.
-                    </p>
-                    <a href="https://www.ijariit.com/manuscripts/v6i4/V6I4-1359.pdf" class="btn btn-warning">View More</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="card" style="width: 15rem">
+              <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+                <a href="https://public.tableau.com/app/profile/aayush.kumar1384/viz/COVIDVaccinationsNationWise/COVIDVaccinationsNationWise" style="text-decoration: none; color:#373737">
+                   <div class="card" style="width: 15rem">
                   <div class="card-img-cont">
                     <img
                     src="./images/projects/covid tableau.webp"
@@ -699,12 +725,9 @@ Predicting COVID Wave 3 in India using LSTM</h5>
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Visualizing COVID Vaccinations Nation Wise - Tableau</h5>
-                    <p class="card-text">
-                      A Tableau visualization of COVID vaccination data around the globe and comparing populations of countries with more than 75% population fully vaccinated.
-                    </p>
-                    <a href="https://public.tableau.com/app/profile/aayush.kumar1384/viz/COVIDVaccinationsNationWise/COVIDVaccinationsNationWise" class="btn btn-warning">View More</a>
-                  </div>
+                    </div>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -715,49 +738,49 @@ Predicting COVID Wave 3 in India using LSTM</h5>
       <div id="skills">
         <div class="container">
           <div class="skills">
-            <div class="head-mdm">Skills</div>
+            <div class="head-mdm">Skills <i class="fa-solid fa-code"></i></div>
             <div class="skillset">
-              <div class="skill">Python</div>
-              <div class="skill">Prefect</div>
-              <div class="skill">PostgreSQL</div>
-              <div class="skill">Neo4j</div>
-              <div class="skill">DuckDB</div>
+              <div class="skill" data-aos="zoom-in">Python</div>
+              <div class="skill" data-aos="zoom-in">Prefect</div>
+              <div class="skill" data-aos="zoom-in">PostgreSQL</div>
+              <div class="skill" data-aos="zoom-in">Neo4j</div>
+              <div class="skill" data-aos="zoom-in">DuckDB</div>
             </div>
             <div class="skillset">
-              <div class="skill">Git</div>
-              <div class="skill">AWS S3</div>
-              <div class="skill">FastAPI</div>
-              <div class="skill">Apache Superset/Preset</div>
-              <div class="skill">Tableau</div>
-              <div class="skill">MS Excel</div>
+              <div class="skill" data-aos="zoom-in">Git</div>
+              <div class="skill" data-aos="zoom-in">AWS S3</div>
+              <div class="skill" data-aos="zoom-in">FastAPI</div>
+              <div class="skill" data-aos="zoom-in">Apache Superset/Preset</div>
+              <div class="skill" data-aos="zoom-in" >Tableau</div>
+              <div class="skill" data-aos="zoom-in">MS Excel</div>
             </div>
             <div class="skillset">
-              <div class="skill">Pandas</div>
-              <div class="skill">Polars</div>
-              <div class="skill">Pydantic</div>
-              <div class="skill">Psycopg</div>
-              <div class="skill">Pandera</div>
+              <div class="skill" data-aos="zoom-in">Pandas</div>
+              <div class="skill" data-aos="zoom-in">Polars</div>
+              <div class="skill" data-aos="zoom-in">Pydantic</div>
+              <div class="skill" data-aos="zoom-in">Psycopg</div>
+              <div class="skill" data-aos="zoom-in">Pandera</div>
             </div>
 
             <div class="skillset">      
-              <div class="skill">NumPy</div>
-              <div class="skill">Seaborn</div>
-              <div class="skill">Scikit-Learn</div>
-              <div class="skill">TensorFlow</div>
-              <div class="skill">gspread</div>
+              <div class="skill" data-aos="zoom-in">NumPy</div>
+              <div class="skill" data-aos="zoom-in">Seaborn</div>
+              <div class="skill" data-aos="zoom-in">Scikit-Learn</div>
+              <div class="skill" data-aos="zoom-in">TensorFlow</div>
+              <div class="skill" data-aos="zoom-in">gspread</div>
             </div>
 
             <div class="skillset">
-              <div class="skill">Simulink</div>
-              <div class="skill">PSpice</div>
-              <div class="skill">Microcontrollers</div>
-              <div class="skill">Raspberry Pi</div>
+              <div class="skill" data-aos="zoom-in">Simulink</div>
+              <div class="skill" data-aos="zoom-in">PSpice</div>
+              <div class="skill" data-aos="zoom-in">Microcontrollers</div>
+              <div class="skill" data-aos="zoom-in">Raspberry Pi</div>
             </div>
 
             <div class="skillset">
-              <div class="skill">Oscilloscopes</div>
-              <div class="skill">Power Electronic Converters</div>
-              <div class="skill">Battery Systems</div>
+              <div class="skill"data-aos="zoom-in" >Oscilloscopes</div>
+              <div class="skill" data-aos="zoom-in">Power Electronic Converters</div>
+              <div class="skill" data-aos="zoom-in">Battery Systems</div>
             </div>
           </div>
         </div>
@@ -765,12 +788,12 @@ Predicting COVID Wave 3 in India using LSTM</h5>
 
       <!-- Achievements -->
 
-      <!-- Gallery -->
+      <!-- TCR -->
       <div class="container" id="technocrats-robotics">
-        <div class="gallery">
+        <div class="gallery gallery-1">
           <div class="row">
-            <div class="head-mdm">Technocrats Robotics</div>
-            <div class="container mt-5">
+            <div class="head-mdm">Technocrats Robotics <i class="fa-solid fa-robot"></i></div>
+            <!-- <div class="container mt-5">
               <div class="row">
                 <div class="col-md-4">
                   <img src="./images/tcr/me1.webp" alt="Image 1" class="gallery-img">
@@ -795,7 +818,8 @@ Predicting COVID Wave 3 in India using LSTM</h5>
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
+          <img src="./images/tcr/tc.webp" data-aos="zoom-in-up">
         </div>
       </div>
 
@@ -803,8 +827,8 @@ Predicting COVID Wave 3 in India using LSTM</h5>
       <div class="container" id="gallery">
         <div class="gallery">
           <div class="row">
-            <div class="head-mdm">My Clicks</div>
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+            <div class="head-mdm">My Photography <i class="fa-solid fa-camera-retro"></i></div>
+            <!-- <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
               <img
                 src="images/photgraphy/DSC_0193.webp"
                 class="w-100 shadow-1-strong rounded mb-4"
@@ -833,29 +857,30 @@ Predicting COVID Wave 3 in India using LSTM</h5>
             </div>
 
             <div class="col-lg-4 mb-4 mb-lg-0">
-              <!-- <img
+              <img
                 src="images/photgraphy/DSC_0355.webp"
                 class="w-100 h-50 shadow-1-strong rounded mb-4"
                 alt="Waves at Sea"
-              /> -->
+              />
 
               <img
                 src="images/photgraphy/DSC_0723.webp"
                 class="w-100 shadow-1-strong rounded mb-4"
                 alt="Yosemite National Park"
               />
-            </div>
+            </div> -->
+            <img src="./images/photgraphy/pc.webp" data-aos="zoom-in-down"/>
           </div>
         </div>
       </div>
       <!-- Footer -->
-      <div class="footer">
-        <div class="container-fluid">
+      <div class="footer" id="contact">
+        <div>
           <div class="links">
           <ul class="links-list">
-            <li><a><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a><i class="fa-brands fa-github"></i></a></li>
-            <li><a><i class="fa-solid fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aayush7kumar" target="_blank" style="text-decoration: none; color: rgb(37, 37, 37) !important"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/Aayush7Kumar" target="_blank" style="text-decoration: none; color: rgb(37, 37, 37) !important"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="mailto:aayush.kumarak7@gmail.com" style="text-decoration: none; color: rgb(37, 37, 37) !important"><i class="fa-solid fa-envelope"></i></a></li>
           </ul>
         </div>
         <div class="text">
@@ -927,6 +952,10 @@ window.addEventListener('load', function() {
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   </body>
 </html>
